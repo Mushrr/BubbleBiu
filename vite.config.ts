@@ -2,10 +2,13 @@ import { defineConfig } from 'vite'
 import electron from 'vite-plugin-electron'
 import renderer from 'vite-plugin-electron-renderer'
 import react from '@vitejs/plugin-react'
+import unocss from 'unocss/vite'
+import
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    unocss(),
     react(),
     electron([
       {
