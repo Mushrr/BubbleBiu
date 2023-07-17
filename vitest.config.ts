@@ -1,4 +1,5 @@
 import { defineConfig, defaultInclude } from 'vitest/config'
+import alias from './alias'
 
 export default defineConfig({
     test: {
@@ -6,5 +7,8 @@ export default defineConfig({
             ...defaultInclude,
             // 其他需要测试的项目
         ]
+    },
+    resolve: {
+        alias
     }
 })

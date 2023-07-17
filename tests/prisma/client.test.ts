@@ -1,4 +1,4 @@
-import createClient from '@electronloc/prisma/client';
+import createClient from '@prismaloc/client';
 import { describe, expect, it } from 'vitest';
 
 describe('prisma client', () => {

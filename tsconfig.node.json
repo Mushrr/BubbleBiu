@@ -4,7 +4,13 @@
     "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@electronloc/*": ["electron/*"],
+      "@prismaloc/*": ["electron/prisma/*"],
+      "@components/*": ["src/components/*"]
+    }
   },
-  "include": ["vite.config.ts"]
+  "include": ["vite.config.ts", "alias.ts", "electron", "tests"]
 }

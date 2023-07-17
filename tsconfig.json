@@ -18,8 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@electronloc/*": ["electron/*"],
+      "@prismaloc/*": ["electron/prisma/*"],
+      "@components/*": ["src/components/*"]
+    }
   },
-  "include": ["src", "electron"],
+  "include": ["src", "electron", "alias.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

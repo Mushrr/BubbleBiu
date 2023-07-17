@@ -11,6 +11,10 @@ const alias: AliasOptions = [
     {
         find: '@prismaloc',
         replacement: '/electron/prisma',
+    },
+    {
+        find: '@components',
+        replacement: '/src/components',
     }
 ]
 
