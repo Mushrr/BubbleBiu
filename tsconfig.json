@@ -25,7 +25,8 @@
       "@electronloc/*": ["electron/*"],
       "@prismaloc/*": ["electron/prisma/*"],
       "@components/*": ["src/components/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@layouts/*": ["src/layouts/*"]
     }
   },
   "include": ["src", "electron", "alias.ts", "utils"],

@@ -19,6 +19,10 @@ const alias: AliasOptions = [
     {
         find: '@utils',
         replacement: '/utils'
+    },
+    {
+        find: '@layouts',
+        replacement: '/src/layouts'
     }
 ]
 
