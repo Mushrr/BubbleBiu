@@ -9,14 +9,14 @@
 
 Any question? Don't hesitate to contact me.
 
-- [](huangxingjiegkd@163.com)
-- [](mushroom@mails.ccnu.edu.cn)
+- [huangxingjiegkd@163.com](huangxingjiegkd@163.com)
+- [mushroom@mails.ccnu.edu.cn](mushroom@mails.ccnu.edu.cn)
 
 ## Some words for you
 
-BubbleBiu is totally built with ❤️.
-If this project can make a little difference for you, please let me know.
-If possible please give me a star ⭐️, I will be very grateful.😀
+- `BubbleBiu` is totally built with ❤️.
+- If this project can make a little difference for you, please let me know.
+- If possible please give me a star ⭐️, I will be very grateful.😀
 
 ## License
 
