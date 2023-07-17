@@ -24,9 +24,10 @@
       "@/*": ["src/*"],
       "@electronloc/*": ["electron/*"],
       "@prismaloc/*": ["electron/prisma/*"],
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@utils/*": ["utils/*"]
     }
   },
-  "include": ["src", "electron", "alias.ts"],
+  "include": ["src", "electron", "alias.ts", "utils"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

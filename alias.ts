@@ -15,6 +15,10 @@ const alias: AliasOptions = [
     {
         find: '@components',
         replacement: '/src/components',
+    },
+    {
+        find: '@utils',
+        replacement: '/utils'
     }
 ]
 
