@@ -1,5 +1,7 @@
 import { app, BrowserWindow } from 'electron'
 import path from 'node:path'
+import MainAPI from './apis/MainAPI'
+import { MainMessage, RendererMessage } from './apis/types'
 
 // The built directory structure
 //
@@ -24,23 +26,40 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
     },
+    titleBarStyle: 'hidden',
   })
 
   // Test active push message to Renderer-process.
   win.webContents.on('did-finish-load', () => {
     win?.webContents.send('main-process-message', (new Date).toLocaleString())
   })
-
   if (VITE_DEV_SERVER_URL) {
     win.loadURL(VITE_DEV_SERVER_URL)
   } else {
     // win.loadFile('dist/index.html')
     win.loadFile(path.join(process.env.DIST, 'index.html'))
   }
+
+  // 顶部控件
 }
 
 app.on('window-all-closed', () => {
   win = null
 })
 
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow).then(() => {
+  const IPC = new MainAPI<MainMessage, RendererMessage>()
+  IPC.on("maxWindow", () => {
+    win?.maximize()
+  })
+  IPC.on("quitWindow", () => {
+    app?.quit()
+  })
+  IPC.on("minWindow", () => {
+    win?.minimize()
+  })
+  IPC.on("add", (a, b) => {
+    return a + b;
+  })
+})
+
