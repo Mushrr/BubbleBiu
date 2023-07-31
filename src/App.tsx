@@ -1,13 +1,13 @@
-import Nav from '@layouts/Nav'
-import Aside from '@layouts/Aside'
-import SubAside from '@layouts/SubAside'
-import CanvasWrapper from '@layouts/CanvasWrapper'
-import Footer from '@layouts/Footer'
+import Nav from "@layouts/Nav";
+import Aside from "@layouts/Aside";
+import SubAside from "@layouts/SubAside";
+import CanvasWrapper from "@layouts/CanvasWrapper";
+import Footer from "@layouts/Footer";
 
 function App() {
   return (
     <>
-      <div className="flex flex-col h-100vh bg-red">
+      <div className="flex flex-col h-100vh">
         <div className="flex flex-row">
           <Aside></Aside>
           <SubAside></SubAside>
@@ -19,7 +19,7 @@ function App() {
         <Footer></Footer>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

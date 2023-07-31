@@ -9,6 +9,6 @@ type RendererMessage = object
 
 
 export type {
-    MainMessage,
-    RendererMessage
-}
+  MainMessage,
+  RendererMessage
+};
